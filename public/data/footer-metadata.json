@@ -1,0 +1,29 @@
+{
+  "aggregator": {
+    "name": "UtilityHub",
+    "url": "https://utilityhub.dev/",
+    "description": "A collection of tools to make your life easier."
+  },
+  "apps": [
+    {
+      "name": "Password Generator",
+      "url": "https://utilityhub.dev/password"
+    },
+    {
+      "name": "Border Radius Tool",
+      "url": "https://utilityhub.dev/border-radius"
+    },
+    {
+      "name": "Cool names",
+      "url": "https://utilityhub.dev/cool-name"
+    },
+    {
+      "name": "Random Draw",
+      "url": "https://utilityhub.dev/randorax"
+    },
+    {
+      "name": "Color Palette",
+      "url": "https://utilityhub.dev/color-palette"
+    }
+  ]
+}
