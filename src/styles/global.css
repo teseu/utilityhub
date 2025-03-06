@@ -3,3 +3,10 @@
   themes: night --default,
   corporate;
 }
+html {
+  font-size: 20px;
+}
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+}

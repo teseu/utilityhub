@@ -1,10 +1,69 @@
 ---
 import ThemeSwitcher from '../utils/ThemeSwitcher.astro'
+import { Image } from 'astro:assets'
+import logoF from '../../assets/logo-f.png'
+import logo from '../../assets/logo.png'
+
+const width = 50
+const height = 50
 ---
 
 <div class="m-0">
   <div class="navbar flex justify-between px-8 bg-base-300 shadow-lg mx-auto my-2 w-full max-w-[98%] rounded-md border border-base-500 z-30">
-    <div class="btn btn-soft btn-secondary text-3xl">UtilityHub</div>
+    <div class="btn btn-soft btn-secondary text-3xl">
+      <div class="logo-container">
+        <Image 
+          src={logoF}
+          class="logo"
+          alt="logo claro" 
+          width={width} 
+          height={height}
+          id="light-logo"
+        />
+        <Image 
+          src={logo}
+          class="logo"
+          alt="logo escuro" 
+          width={width} 
+          height={height}
+          id="dark-logo"
+        />
+      </div>
+    </div>
     <ThemeSwitcher />
   </div>
 </div>
+
+<script>
+  // Observa mudanças no checkbox do ThemeSwitcher
+  const themeController = document.querySelector('.theme-controller');
+  const lightLogo = document.getElementById('light-logo');
+  const darkLogo = document.getElementById('dark-logo');
+
+  function updateLogos() {
+    const isChecked = themeController.checked;
+    lightLogo.style.display = isChecked ? 'none' : 'block';
+    darkLogo.style.display = isChecked ? 'block' : 'none';
+  }
+
+  if (themeController) {
+    themeController.addEventListener('change', updateLogos);
+    // Configuração inicial
+    updateLogos();
+  }
+</script>
+
+<style>
+  .logo-container {
+    position: relative;
+    width: 50px;
+    height: 50px;
+  }
+
+  .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+</style>
