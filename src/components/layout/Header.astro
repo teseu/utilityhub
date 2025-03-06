@@ -41,9 +41,13 @@ const height = 50
   const darkLogo = document.getElementById('dark-logo');
 
   function updateLogos() {
-    const isChecked = themeController.checked;
-    lightLogo.style.display = isChecked ? 'none' : 'block';
-    darkLogo.style.display = isChecked ? 'block' : 'none';
+    const isChecked = themeController ? (themeController as HTMLInputElement).checked : false;
+    if (lightLogo) {
+      lightLogo.style.display = isChecked ? 'none' : 'block';
+    }
+    if (darkLogo) {
+      darkLogo.style.display = isChecked ? 'block' : 'none';
+    }
   }
 
   if (themeController) {
