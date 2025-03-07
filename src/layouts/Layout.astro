@@ -5,14 +5,14 @@ import Header from '../components/layout/Header.astro';
 
 interface Props {
   title: string;
+  theme: string;
 }
 
-const { title } = Astro.props
-const theme = 'night'
+const { title, theme } = Astro.props
 ---
 
 <!DOCTYPE html>
-<html lang="en" data-theme={theme}>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
@@ -20,6 +20,8 @@ const theme = 'night'
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/recharge" rel="stylesheet">
+                
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
@@ -32,4 +34,5 @@ const theme = 'night'
     </main>
     <Footer /
   </body>
+  
 </html>

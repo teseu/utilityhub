@@ -10,3 +10,25 @@ html {
 body {
   font-family: 'Titillium Web', sans-serif;
 }
+
+.logo__name {
+  font-family: 'Recharge', sans-serif;
+  padding: .5rem 0;
+}
+
+
+.logo__name .blue {
+  color: #1b3d70;
+}
+
+.logo__name .orange {
+  color: #ff6600;
+}
+
+.logo__name .blue.night {
+  color: #6ba4fa;
+}
+
+.logo__name .orange.night {
+  color: #fb9d5f;
+}

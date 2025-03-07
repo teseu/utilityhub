@@ -4,13 +4,13 @@ import { Image } from 'astro:assets'
 import logoF from '../../assets/logo-f.png'
 import logo from '../../assets/logo.png'
 
-const width = 50
-const height = 50
+const width = 60
+const height = 60
 ---
 
 <div class="m-0">
   <div class="navbar flex justify-between px-8 bg-base-300 shadow-lg mx-auto my-2 w-full max-w-[98%] rounded-md border border-base-500 z-30">
-    <div class="btn btn-soft btn-secondary text-3xl">
+    <div class="btn btn-soft btn-secondary text-3xl py-1 h-auto">
       <div class="logo-container">
         <Image 
           src={logoF}
@@ -29,6 +29,9 @@ const height = 50
           id="dark-logo"
         />
       </div>
+      <div class="logo__name">
+        <span class="blue night">Utility</span><span class="orange night">Hub</span>
+      </div>
     </div>
     <ThemeSwitcher />
   </div>
@@ -36,17 +39,22 @@ const height = 50
 
 <script>
   // Observa mudanças no checkbox do ThemeSwitcher
-  const themeController = document.querySelector('.theme-controller');
+  const themeController = document.getElementById('theme-controller');
   const lightLogo = document.getElementById('light-logo');
   const darkLogo = document.getElementById('dark-logo');
+  const blue = document.querySelector('.blue');
+  const orange = document.querySelector('.orange');
 
   function updateLogos() {
     const isChecked = themeController ? (themeController as HTMLInputElement).checked : false;
     if (lightLogo) {
       lightLogo.style.display = isChecked ? 'none' : 'block';
+      blue?.classList.toggle('night', !isChecked);
+      orange?.classList.toggle('night', !isChecked);
     }
     if (darkLogo) {
       darkLogo.style.display = isChecked ? 'block' : 'none';
+      
     }
   }
 
@@ -60,8 +68,9 @@ const height = 50
 <style>
   .logo-container {
     position: relative;
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
+    display: flex;
   }
 
   .logo {
