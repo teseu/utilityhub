@@ -5,6 +5,7 @@ dist/
 
 # dependencies
 node_modules/
+local_img/
 
 # logs
 npm-debug.log*
