@@ -1,0 +1,13 @@
+---
+const content = Astro.props
+---
+
+<div class="card bg-base-100 shadow-xl">
+  <div class="card-body">
+    <h2 class="card-title">{content.name}</h2>
+    <p>{content.description}</p>
+    <div class="card-actions justify-end">
+      <a href={content.url} class="btn btn-primary">Try it</a>
+    </div>
+  </div>
+</div>

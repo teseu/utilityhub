@@ -1,47 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '../layouts/Layout.astro'
+import Card from '../components/layout/Card.astro'
 ---
 
 <Layout title="UtilityHub - Web Tools Collection" theme="night">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <div class="card bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">Border Radius Generator</h2>
-        <p>A visual tool to generate and customize border radius values for your CSS. Create perfectly rounded corners with live preview.</p>
-        <div class="card-actions justify-end">
-          <a href="/border-radius-generator" class="btn btn-primary">Try it</a>
-        </div>
-      </div>
-    </div>
+    <Card name="Border Radius Generator" description="A visual tool to generate and customize border radius values for your CSS. Create perfectly rounded corners with live preview." url="/border-radius" />
+    
+    <Card name="Password Generator" description="Generate strong and secure passwords with a single click. Customize the length, characters, and symbols to create the perfect password for your needs." url="/password" />
 
-    <div class="card bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">Password Generator</h2>
-        <p>Generate secure and customizable passwords with options for length, special characters, numbers, and more.</p>
-        <div class="card-actions justify-end">
-          <a href="/password-generator" class="btn btn-primary">Try it</a>
-        </div>
-      </div>
-    </div>
+    <Card name="Cool Names" description="Generate cool and unique names for your projects, characters, or anything else. Choose from a variety of categories and get inspired by the results." url="/cool-name" />
 
-    <div class="card bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">Randorax</h2>
-        <p>A powerful random data generator for developers. Create test data, mock responses, and random values with ease.</p>
-        <div class="card-actions justify-end">
-          <a href="/randorax" class="btn btn-primary">Try it</a>
-        </div>
-      </div>
-    </div>
+    <Card name="Random Draw" description="Create random draws and raffles with a simple and intuitive tool. Add participants, set the number of winners, and let the tool do the rest." url="/randorax" />
 
-    <div class="card bg-base-100 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">Cool Name Generator</h2>
-        <p>Generate unique and creative names for your apps, companies, game studios, and more. Features smart type detection and curated word combinations.</p>
-        <div class="card-actions justify-end">
-          <a href="/cool-name" class="btn btn-primary">Try it</a>
-        </div>
-      </div>
-    </div>
+    <Card name="Color Palette" description="Generate beautiful color palettes for your projects. Choose from a variety of color schemes and export the palette in different formats." url="/color-palette" />
   </div>
 </Layout>
