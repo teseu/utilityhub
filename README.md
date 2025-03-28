@@ -1,47 +1,37 @@
-# Astro Starter Kit: Minimal
+# UtilityHub.dev
 
-```sh
-npm create astro@latest -- --template minimal
-```
+UtilityHub.dev is a collection of online tools designed to simplify everyday tasks, from generating secure passwords to creating color palettes. All applications are easy to use and accessible directly from the browser, with no installation required.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## 🚀 Available Tools
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### 🔒 Password Generator
+Generates secure passwords by combining common words, special characters, and numbers. Customize the password length and choose from different generation styles.
 
-## 🚀 Project Structure
+### 🎲 Random Picker (Randora X)
+Enter a list of names or items and let the app randomly select a winner. Useful for giveaways, quick choices, and impartial decisions.
 
-Inside of your Astro project, you'll see the following folders and files:
+### 🎨 Color Palette Generator
+Create stunning color palettes based on random selections or predefined harmonies. Great for designers, developers, and content creators.
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### 🔘 Border Radius Generator
+Generate CSS code for rounded borders in a visual and intuitive way. Adjust individual values for each corner and copy the ready-to-use code.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### 📛 Name Generator (Cool names)
+Create creative names for companies, apps, studios, and games. The combination of adjectives and nouns generates unique and inspiring suggestions.
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## 📄 How to Use
+Simply visit [UtilityHub.dev](https://utilityhub.dev) and select the desired tool. No registration is required, and all features are available for free.
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 💡 Contributions and Feedback
+This project is open-source! If you have suggestions, find bugs, or want to contribute improvements, visit the GitHub repository and open an issue.
 
-## 🧞 Commands
+📌 **Repository:** [GitHub - UtilityHub](https://github.com/teseu/webapps)
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+**Developed by [Tulio Macedo](https://github.com/teseu/webapps)** with **[Astro Starter Kit: Minimal](https://astro.build/)**
+
 
 ## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Feel free to check [Astro documentation](https://docs.astro.build).
