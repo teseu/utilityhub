@@ -4,28 +4,30 @@
     "url": "/",
     "description": "A collection of tools to make your life easier."
   },
-    "company": [{
-        "name": "About us",
-        "url": "/about"
-      },
-      {
-        "name": "Contact",
-        "url": "/contact"
-      }
-    ],
-    "legal": [{
-        "name": "Terms of use",
-        "url": "/terms"
-      },
-      {
-        "name": "Privacy policy",
-        "url": "/privacy"
-      },
-      {
-        "name": "Cookie policy",
-        "url": "/cookie"
-      }
-    ],
+  "company": [
+    {
+      "name": "About us",
+      "url": "/about"
+    },
+    {
+      "name": "Contact",
+      "url": "/contact"
+    }
+  ],
+  "legal": [
+    {
+      "name": "Terms of use",
+      "url": "/terms"
+    },
+    {
+      "name": "Privacy policy",
+      "url": "/privacy"
+    },
+    {
+      "name": "Cookie policy",
+      "url": "/cookie"
+    }
+  ],
   "apps": [
     {
       "name": "Password Generator",

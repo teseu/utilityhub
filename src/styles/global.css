@@ -1,7 +1,8 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 @plugin "daisyui" {
-  themes: night --default,
-  corporate;
+  themes:
+    night --default,
+    corporate;
 }
 html {
   font-size: 20px;
@@ -13,9 +14,8 @@ body {
 
 .logo__name {
   font-family: 'Recharge', sans-serif;
-  padding: .5rem 0;
+  padding: 0.5rem 0;
 }
-
 
 .logo__name .blue {
   color: #1b3d70;

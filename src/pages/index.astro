@@ -1,18 +1,25 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Card from '../components/layout/Card.astro'
+
+// Placeholder SVGs for icons
+const borderRadiusIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20h4a2 2 0 002-2V6a2 2 0 00-2-2h-4a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>`;
+const passwordIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 7l-3 3m0 0l-3-3m3 3V4" /></svg>`;
+const coolNamesIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>`;
+const randomDrawIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 13v-1m4 1v-1m4 1v-1M2 20h20V4H2v16z" /></svg>`;
+const colorPaletteIcon = `<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 21h10a2 2 0 002-2V9.414a1 1 0 00-.293-.707l-5.414-5.414A1 1 0 0012.586 3H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>`;
 ---
 
 <Layout title="UtilityHub - Web Tools Collection" theme="night">
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    <Card name="Border Radius Generator" description="A visual tool to generate and customize border radius values for your CSS. Create perfectly rounded corners with live preview." url="/border-radius" />
+    <Card name="Border Radius Generator" description="A visual tool to generate and customize border radius values for your CSS. Create perfectly rounded corners with live preview." url="/border-radius" icon={borderRadiusIcon} />
     
-    <Card name="Password Generator" description="Generate strong and secure passwords with a single click. Customize the length, characters, and symbols to create the perfect password for your needs." url="/password" />
+    <Card name="Password Generator" description="Generate strong and secure passwords with a single click. Customize the length, characters, and symbols to create the perfect password for your needs." url="/password" icon={passwordIcon} />
 
-    <Card name="Cool Names" description="Generate cool and unique names for your projects, characters, or anything else. Choose from a variety of categories and get inspired by the results." url="/cool-name" />
+    <Card name="Cool Names" description="Generate cool and unique names for your projects, characters, or anything else. Choose from a variety of categories and get inspired by the results." url="/cool-name" icon={coolNamesIcon} />
 
-    <Card name="Random Draw" description="Create random draws and raffles with a simple and intuitive tool. Add participants, set the number of winners, and let the tool do the rest." url="/randorax" />
+    <Card name="Random Draw" description="Create random draws and raffles with a simple and intuitive tool. Add participants, set the number of winners, and let the tool do the rest." url="/randorax" icon={randomDrawIcon} />
 
-    <Card name="Color Palette" description="Generate beautiful color palettes for your projects. Choose from a variety of color schemes and export the palette in different formats." url="/color-palette" />
+    <Card name="Color Palette" description="Generate beautiful color palettes for your projects. Choose from a variety of color schemes and export the palette in different formats." url="/color-palette" icon={colorPaletteIcon} />
   </div>
 </Layout>

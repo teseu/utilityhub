@@ -52,7 +52,7 @@ try {
     const response = await fetch(`${apiUrl}/data/footer-metadata.json`);
     footerData = await response.json();
   }
-} catch (error) {
+} catch (_error) {
   console.warn('Falha ao carregar footer-metadata.json, usando dados fallback');
   footerData = fallbackData;
 }
